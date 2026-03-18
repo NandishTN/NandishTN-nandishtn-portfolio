@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nandish | Data Analyst</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg: #0f172a;
+    --text: white;
+    --card: #1e293b;
+}
+
+.light {
+    --bg: #ffffff;
+    --text: #111;
+    --card: #f1f5f9;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    transition: 0.3s;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+}
+
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: var(--text);
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero img {
+    width: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+}
+
+.hero p {
+    color: gray;
+}
+
+/* Button */
+.btn {
+    background: #38bdf8;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    display: inline-block;
+}
+
+/* Sections */
+section {
+    max-width: 900px;
+    margin: auto;
+    padding: 50px 20px;
+}
+
+/* Cards */
+.card {
+    background: var(--card);
+    padding: 20px;
+    margin: 15px 0;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+/* Toggle */
+.toggle {
+    cursor: pointer;
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div><b>Nandish</b></div>
+    <div>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+        <span class="toggle" onclick="toggleMode()">🌙</span>
+    </div>
+</nav>
+
+<div class="hero">
+    <img src="profile.jpg" alt="Nandish">
+    <h1>Nandish T N</h1>
+    <p>Data Analyst | AI & DS Graduate</p>
+
+    <a class="btn" href="https://drive.google.com/file/d/1976Y47huBXk3Ya5Cv1u_a_pa7pGa1Q_U/view" target="_blank">📄 View Resume</a>
+
+    <div>
+        <a href="https://github.com/NandishTN">GitHub</a> |
+        <a href="https://www.linkedin.com/in/nandishtn">LinkedIn</a> |
+        <a href="https://leetcode.com/u/Nandishtn/">LeetCode</a>
+    </div>
+</div>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        Data Analyst with experience in SQL, Python, Power BI, and Excel. 
+        I build dashboards, analyze data, and generate business insights.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Airbnb Data Analysis</h3>
+        <p>Data analysis + Power BI dashboard for pricing insights.</p>
+        <a href="https://github.com/NandishTN/airbnb-data-analysis">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>Customer Churn Analysis</h3>
+        <p>Analyzed churn drivers using Python & dashboards.</p>
+        <a href="https://github.com/NandishTN/Customer-Churn-Analysis">View Project</a>
+    </div>
+
+    <div class="card">
+        <h3>E-commerce Sales Analysis</h3>
+        <p>50K+ records analyzed to find revenue trends.</p>
+        <a href="https://github.com/NandishTN/Ecommerce-Sales-Performance">View Project</a>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>Email: nandishtn24@gmail.com</p>
+</section>
+
+<script>
+function toggleMode() {
+    document.body.classList.toggle("light");
+}
+</script>
+
+</body>
+</html>
